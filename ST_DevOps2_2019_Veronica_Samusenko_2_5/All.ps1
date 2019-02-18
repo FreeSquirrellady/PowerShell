@@ -24,4 +24,4 @@ Invoke-Command -ScriptBlock {Set-Item WSMan:\localhost\listener\listener*\port -
 
 [string]$cred = Get-Credential "Veronica\Administrator"
 New-PSSessionConfigurationFile -Path "E:\Epam. Training\ADUser.pssc" -ModulesToImport ″ActiveDirectory″ -VisibleCmdlets *-ADUser, Get-ChildItem 
-Register-PSSessionConfiguration -Name ADUser -Path  "C:\EPAM\ADUser.pssc" -RunAsCredential $cred -ShowSecurityDescriptorUI
+Register-PSSessionConfiguration -Name ADUser -Path  "E:\Epam. Training\ADUser.pssc" -RunAsCredential $cred -ShowSecurityDescriptorUI
